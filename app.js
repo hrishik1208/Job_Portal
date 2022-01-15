@@ -258,6 +258,7 @@ res.render('card',{companysignupemail:founditem,position:founditem,companyname:f
       res.redirect('/dashbord');
        
    })
-app.listen(3000,function(){
-    console.log('server is running on port 3000');
+app.listen(process.env.PORT ||3000,function(){
+
 });
+  
