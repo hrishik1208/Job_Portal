@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+    *{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .modal-header {
+            background:linear-gradient(45deg,#2A88AD, transparent);
+        }
+        input{
+            padding:4px;
+            font-size: larger;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px 3px;
+        }
+        
+  :root {
+  --clr-primary: #2962ff;
+  --clr-primary-hover: #0d47a1;
+  --clr-gray-med: #78909c;
+  --clr-gray-light: #cfd8dc;
+}
+body{
+    background: linear-gradient(rgb(174, 229, 236),rgb(154, 180, 221));
+}
+
+* {
+  margin: 10px;
+  padding: 10px;
+  /* background: linear-gradient(#fcf8d7,#b6cfaa); */
+  box-sizing: border-box;
+  /* border:4px solid green; */
+}
+
+body {
+  margin: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-gray-light);
+}
+
+.btn-add {
+  width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  border: none;
+  background-color: #2962ff;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.btn-add:active,
+.btn-add:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+main {
+  margin-top: 1em;
+}
+
+.shadow3{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.shadow2{
+  width: 100%;
+  display: flex;
+  flex-basis: 10%;
+  height: 15em;
+  border: 1px solid black;
+  /* margin: 0 .4em .2em 0; */
+  margin:10px;
+  transition: all 100ms ease-in-out;
+}
+
+   
+
+  /* margin: 0 .4em .2em 0; */
+ 
+
+.div-shadow:nth-child(odd) {
+  box-shadow: 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:nth-child(even) {
+  box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:hover {
+  transform: scale(1.1);
+}
+* {
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patient-data {
+
+    /* display: inline; */
+    
+    box-shadow: 0 0 15px #ccc;
+    border-radius: 5px;
+    width:500px;
+    height:200px;
+    margin:5px;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+.name{
+  margin:2px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 50px;
+
+}
+.position{
+  margin:10px;
+  padding :8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+}
+.btn{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom:  30px;
+  background: linear-gradient(rgb(138, 144, 226) ,rgb(49, 49, 39));
+}
+
+/* .patient-data:not(:first-child) {
+    margin-top: 1.5rem;
+} */
+.top{
+  margin:0 200px;
+}
+.btn btn-default{
+  margin-right: 100px;
+}
+.hd{
+  text-align: center;
+  margin:10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.btn1{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  right:80px;
+  top:15px;
+  bottom:  30px;
+  background: linear-gradient(rgb(16, 17, 36) ,rgb(49, 49, 39));
+}
+
+</style>
+<body>
+  <center>
+    <img style="border-radius: 10%;" width="300px" src="images/Job-Portal-Software-2-2.png">
+    <form style="width: 50%;" action='/candidatedata' method ='post'>
+      
+        <h2 style="color: black;">Please Enter your details</h2>
+        <input id="name" style="width: 100%; text-align: center;" type="text" name="name" placeholder="Your Name" required>
+        <span id="erroremail" style="color: #ff0000; font-size: 20px;width: 100%;" required></span>
+        <input style="width: 100%; text-align: center;" type ='number' name='contact' placeholder="Enter contact Number" required><br>
+        <input style="width: 100%; text-align: center;" id ='date' name='dob' type ='date' placeholder="Date Of Birth" required><br>
+        <input style="width: 100%; text-align: center;" type = 'text' name='experience' placeholder="Experience" required><br>
+        <input style="width: 100%; text-align: center;" type ='text' name='skills' placeholder="skills" required><br>
+        <input  style="width: 100%; text-align: center;" type ='text' name='position' placeholder="position" required><br>
+        <input  style="width: 100%;text-align: center; "  type ='text' name='expected' placeholder="Expected package" required><br>
+
+<br>   
+            
+        <span id="errorpassword" style="color: red; font-size: 20px;margin-left: -10px;"></span>
+        <span class="privacy-policy">
+          <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+         <div class="button-section">
+          <input id="hari" type="submit" name="Submit " />
+         
+          </span>
+         </div>
+    </form></center>
+    <script>
+      document.getElementById("hari").addEventListener("click", function() {
+  //   document.getElementById("demo").innerHTML = "Hello World";
+          alert("Application Submitted Successfully");
+      });
+  </script>
+</body>
+</html>

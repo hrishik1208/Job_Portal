@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+<link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  /* body{
+            background-image: url('images/7a');
+            background-image: url("images/hhh.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            background-size: 1500px 500px;
+        } */
+    *{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .modal-header {
+            background:linear-gradient(45deg,#2A88AD, transparent);
+        }
+        input{
+            padding:4px;
+            font-size: larger;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px 3px;
+        }
+        
+  :root {
+  --clr-primary: #2962ff;
+  --clr-primary-hover: #0d47a1;
+  --clr-gray-med: #78909c;
+  --clr-gray-light: #cfd8dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-gray-light);
+}
+
+.btn-add {
+  width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  border: none;
+  background-color: #2962ff;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.btn-add:active,
+.btn-add:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+main {
+  margin-top: 1em;
+}
+
+.shadow3{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.shadow2{
+  width: 100%;
+  display: flex;
+  flex-basis: 10%;
+  height: 15em;
+  border: 1px solid black;
+  /* margin: 0 .4em .2em 0; */
+  margin:10px;
+  transition: all 100ms ease-in-out;
+}
+
+   
+
+  /* margin: 0 .4em .2em 0; */
+ 
+
+.div-shadow:nth-child(odd) {
+  box-shadow: 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:nth-child(even) {
+  box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:hover {
+  transform: scale(1.1);
+}
+* {
+    font-family: arial, helvetica, verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patient-data {
+
+    /* display: inline; */
+    
+    box-shadow: 0 0 15px #ccc;
+    border-radius: 5px;
+    width:500px;
+    height:200px;
+    margin:5px;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+.name{
+  margin:2px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 50px;
+
+}
+.position{
+  margin:10px;
+  padding :8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+}
+.btn{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom:  30px;
+  background: linear-gradient(rgb(138, 144, 226) ,rgb(49, 49, 39));
+}
+
+/* .patient-data:not(:first-child) {
+    margin-top: 1.5rem;
+} */
+.top{
+  margin:0 200px;
+}
+.btn btn-default{
+  margin-right: 100px;
+}
+.hd{
+  text-align: center;
+  margin:10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.btn1{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  right:80px;
+  top:15px;
+  bottom:  30px;
+  background: linear-gradient(rgb(16, 17, 36) ,rgb(49, 49, 39));
+}
+</style>
+<body>
+  <center>
+      <h1 style="background-color: #2A88AD;color: white;margin-top: -28px;position: relative;" > Jobs Available</h1>
+      <img style="margin-top: -7px;" width="100%" src="images/jobportal-cover.jpg">
+    </center><br>
+  <div class="top">
+  <header>
+    
+  
+    <ul>
+        <% companysignupemail.forEach(function (item) { %>
+          
+            <li class="patient-data">
+              <div style="background-color: white;">
+                <div style="background-color: white;" class='name'><i class="fa fa-empire" aria-hidden="true"></i> <h1> <%= item.companyname %> 
+                 </h1></div>
+                <div style="background-color: white;" class=' position'>    <i class="fa fa-user-circle-o" aria-hidden="true"></i> <%= item.position %></div>
+                <div style="background-color: white;" class='position'><i class="fa fa-inr" aria-hidden="true"></i> <%= item.ctc %></div>
+                <form action='/btn' method ='post'>
+            
+                 <form id='gfg' action='/btn' method ='post'>
+ <button type='submit'   name='btn' class ='btn' value='<%=item.companyname%>'> Apply Now</button> 
+
+                 <!-- <input type="button"  class ='btn'  value='item.comapnyname' onclick="location.href='http://localhost:3000/card';" value="Apply Now" /> -->
+                
+                </form></div>
+                </li>
+            
+        <% }); %>
+    </ul>
+
+      
+
+
+  
+ 
+       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 20px;"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+
+              <form action='/candidatedata' method ='post'>
+                <h2 style="color: black;">Please Enter your details</h2>
+                <input id="name" style="width: 100%; text-align: center;" type="text" name="name" placeholder="Your Name" required><br>
+                <span id="erroremail" style="color: #ff0000; font-size: 20px;"></span>
+                <input type ='number' name='contact' placeholder="Enter contact Number" required>
+                <input id ='date' name='dob' type ='date' placeholder="Date Of Birth" required>
+                <input type = 'text' name='experience' placeholder="Experience" required>
+                <input type ='text' name='skills' placeholder="skills" required>
+                <input type ='text' name='position' placeholder="position" required>
+                <input type ='text' name='expected' placeholder="Expected package" required>
+
+<br>
+                    Gender:   
+                    </label>  <br>  
+                    <input type="radio" id="gender" name="gender" value="male"/> Male    
+                    <br>  
+                    <input type="radio" id="gender" name="gender" value="female"/> Female <br/>   
+                    
+                <span id="errorpassword" style="color: red; font-size: 20px;margin-left: -10px;"></span>
+                
+                 <div class="button-section">
+                  <input type="submit" name="Submit " />
+                  <span class="privacy-policy">
+                  <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+                  </span>
+                 </div>
+            </form>
+         
+            </div>
+          <script type="text/javascript">
+            function val1(){
+            var useremail=document.getElementById('email').value;
+            var userpassword=document.getElementById('password').value;
+      
+            var emailcheck=/^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+            
+            if (emailcheck.test(useremail)){
+              document.getElementById('erroremail').innerHTML = " ";
+            }
+            else{
+              document.getElementById('erroremail').innerHTML = "**Invalid Email id";
+              return false;
+            }
+            
+          }
+        </script>
+        <!-- <script type="text/javascript">
+            document.getElementById('hg').innerHTML = "hufr";
+        </script> -->
+            <div class="modal-footer">
+              
+              <button type="button" class="btn1 btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+<script>
+  function myFunction() {
+      document.getElementById("gfg").submit();
+  }
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+  </section>
+</div>
+  
+</body>
+</html>

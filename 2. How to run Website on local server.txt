@@ -1,0 +1,7 @@
+1. First Download the Node. For more details check "Install Node.js on Windows" file available in the same folder.
+
+2. After Downloading open this folder in terminal, and run the command "node app.js" .
+
+3. Now just Open your browser and search "http://localhost:3000/" .
+
+4. Now Website is ready to go.

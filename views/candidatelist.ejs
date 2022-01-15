@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style type="text/css">
+      body{
+       background-color: 	#F5F5F5;
+     }
+      td{
+        text-align: center;
+      }
+      th{
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- This is For NAV bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div style="background-color:blue; color: white;" class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div style="font-size: 20px;padding-left: 40px;" class="collapse navbar-collapse" id="navbarNav">
+                <center>
+                <ul class="navbar-nav" >
+                  <li class="nav-item">
+                    <a style="margin-left: 250px; font-size: 20px;padding-left: 40px;color: white;" class="nav-link active" aria-current="page" href="ABOUTUS">INFO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link active" aria-current="page" href="dashbord">JOBS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="#">CANDIDATES APPLIED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="list">ALL LISTED COMPANIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="/">LOGOUT</a>
+                  </li>
+                  
+                </ul></center>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- Code for Table -->
+    <div><hr>
+        <center>
+        <h1 style="font-size:30px;">Applied Candidates For <%=name6 %></h1>
+        <hr>
+        <table style="width: 60%;font-size: 20px;border: 1px solid blue;" class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Company Name</th>
+
+                <th scope="col">Skills</th>
+                <th scope="col">Position</th>
+                <th scope="col">Expected CTC</th>
+              </tr>
+            </thead>
+            <tbody>
+                   
+         <%  for(var i =0; i<List1.length;i++){ %>
+           
+          
+
+            <tr>
+          
+         <% if(name6 === List2[i]){ %>
+
+                   
+             <td>
+               <%= i+1 %>
+             </td>
+                      <td>
+                        <%= List1[i] %>
+                      </td>
+                      <td>
+                        <%= List2[i] %>
+                      </td>
+                      <td>
+                       <%= List3[i] %>
+                     </td>
+                     <td>
+                       <%= List4[i] %>
+                     </td>
+                     <td>
+                       <%= List5[i]%>
+                     </td>
+                    
+                     
+                   
+                     </tr> 
+                     <% }%> 
+                     <%}%>
+
+                   
+                       
+                   </tbody>
+
+               
+               
+              <!-- <tr>
+                <th scope="row">1</th>
+                <td>Mr. Hawking</td>
+                <td>Software,APP,Web</td>
+                <td>HR</td>
+                <td>36 LPA</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Buchalka</td>
+                <td>FRONT END</td>
+                <td>Finance Department</td>
+                <td>10 LPA</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Adam Bills</td>
+                <td>JAVA DEV</td>
+                <td>HR</td>
+                <td>18 LPA</td>
+              </tr>
+            </tbody> -->
+          </table>
+        </center>
+    </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script> 
+            document.getElementById("hari").addEventListener("click", function() {
+        //   document.getElementById("demo").innerHTML = "Hello World";
+                alert("Submitted"); 
+            }); 
+        </script> 
+</body> 
+</html> 

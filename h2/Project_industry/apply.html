@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        *{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="background-color: #2A88AD;color: white;margin-top: -8px;">Here You can apply</h1>
+    <img width="300px" src="images/Job-Portal-Software-2-2.png">
+    </center>
+    <div style="border: 2px solid black; width: 25%;padding-bottom: 5px;">
+        <center>
+        <h2 >Company</h2>
+        <h2>Vacancy For xyz</h2>
+        <h2>Package</h2>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Apply</button>
+        </center>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 20px;"><span aria-hidden="true">&times;</span></button>
+                <div class="modal-body">
+                  <form onsubmit="return val1()" name="google-sheet1"  autocomplete="off" method="post">
+                    <h2 style="color: black;">Please Login</h2>
+                    <input id="name" style="width: 100%; text-align: center;" type="text" name="name" placeholder="Your Name" required><br>
+                    <span id="erroremail" style="color: red; font-size: 20px;"></span>
+                    <input id="password" style="width: 100%; text-align: center;margin-left: -18px;" type="password" name="Password" placeholder="Password" required><br>
+                    <span id="errorpassword" style="color: red; font-size: 20px;margin-left: -10px;"></span>
+                    <button class="a" style="width: 100%; text-align: center;" type="submit">Check details</button>
+                    <button style="width: 100%; text-align: center;" type="submit"><a style="color: green; text-decoration: none; " href="3_main.html">LOGIN</a></button>
+          
+                  </form>
+                </div>
+              <script type="text/javascript">
+                function val1(){
+                var useremail=document.getElementById('email').value;
+                var userpassword=document.getElementById('password').value;
+          
+                var emailcheck=/^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+                
+                if (emailcheck.test(useremail)){
+                  document.getElementById('erroremail').innerHTML = " ";
+                }
+                else{
+                  document.getElementById('erroremail').innerHTML = "**Invalid Email id";
+                  return false;
+                }
+                
+              }
+            </script>
+            <!-- <script type="text/javascript">
+                document.getElementById('hg').innerHTML = "hufr";
+            </script> -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</body>
+</html>

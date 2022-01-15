@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+
+      <style  type="text/css">
+
+body{
+            /* background-image: url('images/7a'); */
+            background-image: url("images/hhh.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .form-style-10{
+      width:600px;
+      padding:30px;
+      margin:40px auto;
+      background: #FFF;
+      border-radius: 10px;
+      -webkit-border-radius:10px;
+      -moz-border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+      -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+      -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    }
+    .form-style-10 .inner-wrap{
+      padding: 30px;
+      background: #F8F8F8;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .form-style-10 h1{
+      background: #fcb769;
+      padding: 20px 30px 15px 30px;
+      margin: -30px -30px 30px -30px;
+      border-radius: 10px 10px 0 0;
+      -webkit-border-radius: 10px 10px 0 0;
+      -moz-border-radius: 10px 10px 0 0;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+      font: normal 30px 'Bitter', serif;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      border: 1px solid #fcb769;
+    }
+    .form-style-10 h1 > span{
+      display: block;
+      margin-top: 2px;
+      font: 13px Arial, Helvetica, sans-serif;
+    }
+    .form-style-10 label{
+      display: block;
+      font: 13px Arial, Helvetica, sans-serif;
+      color: #888;
+      margin-bottom: 15px;
+    }
+    .form-style-10 input[type="text"],
+    .form-style-10 input[type="date"],
+    .form-style-10 input[type="datetime"],
+    .form-style-10 input[type="email"],
+    .form-style-10 input[type="number"],
+    .form-style-10 input[type="search"],
+    .form-style-10 input[type="time"],
+    .form-style-10 input[type="url"],
+    .form-style-10 input[type="password"],
+    .form-style-10 textarea,
+    .form-style-10 select {
+      display: block;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      -webkit-border-radius:6px;
+      -moz-border-radius:6px;
+      border: 2px solid #fff;
+      box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+      -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+      -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    }
+    
+    .form-style-10 .section{
+      font: normal 20px 'Bitter', serif;
+      color: #fcb769;
+      margin-bottom: 5px;
+    }
+    .form-style-10 .section span {
+      background: #fcb769;
+      padding: 5px 10px 5px 10px;
+      position: absolute;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border: 4px solid #fff;
+      font-size: 14px;
+      margin-left: -45px;
+      color: #fff;
+      margin-top: -3px;
+    }
+    .form-style-10 input[type="button"], 
+    .form-style-10 input[type="submit"]{
+      background: #2A88AD;
+      padding: 8px 20px 8px 20px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+      font: normal 30px 'Bitter', serif;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+      border: 1px solid #257C9E;
+      font-size: 15px;
+    }
+    .form-style-10 input[type="button"]:hover, 
+    .form-style-10 input[type="submit"]:hover{
+      background: #2A6881;
+      -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+      box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    }
+    .form-style-10 .privacy-policy{
+      float: right;
+      width: 250px;
+      font: 12px Arial, Helvetica, sans-serif;
+      color: #4D4D4D;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+        
+        form {
+  border: 3px solid #b7e6f8;
+  border-block-start-style: ridge;
+}
+.form2{
+    margin: 70px 300px;
+    height:500px;
+    padding:30px;
+
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 8px 10px;
+  margin: 8px 0;
+  /* display: inline-block */
+  border: 1px solid #2A88AD;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+background-color:linear-gradient(45deg,green,transparent);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  background: radial-gradient(rgb(248, 224, 179),red);
+  width: 15%;
+  border-radius: 30px;
+  position: relative;
+  left: 250px;
+  /* top:30px; */
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 10px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+label{
+  display: inline;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+    </style>
+
+</head>
+<body>
+    <form action="/company_login" method="post" class = 'form2'>
+        <div class="imgcontainer">
+          <img src="images/job-portal.png" alt="Avatar" class="avatar">
+        </div>
+      
+        <div class="container">
+          <!-- <label for="uname"><b>Email Address</b></label> -->
+          <center>
+          <input  style="margin-left: -300px;" type="text" placeholder="Enter Email Id" name="emailcompany" required>
+      <br>
+          <!-- <label for="psw" ><br>Password</label> -->
+          <input style="position: relative;left: 30px; margin-left: -360px;" type="password" placeholder="Enter Password" name="passwordcompany" required>
+        </center>
+        <div class="bth" style="display: flex;flex-basis: 50%;">
+          <button style="width:170px; margin-left: -50px;" type="submit">Login</button>
+          <a href ="/company_signup"> <button type="button" style="width:170px;margin-left:15px;"  >
+            Sign Up
+          </button></a>
+        </div>
+          
+        </div>
+      
+        
+      </form>
+    
+      
+     <!-- Modal -->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width: 20px;"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-body">
+                <div class="form-style-10">
+                    <h1>Sign Up Now!</h1>
+                    <form>
+                        <div class="section"><span>1</span>First Name & Address</div>
+                        <div class="inner-wrap">
+                            <label>Company Name <input type="text" name="field1" /></label>
+                            <label>Address <textarea name="field2"></textarea></label>
+                        </div>
+                    
+                        <div class="section"><span>2</span>Email & Phone</div>
+                        <div class="inner-wrap">
+                            <label>Email Address <input type="email" name="field3" /></label>
+                            <label>Phone Number <input type="text" name="field4" /></label>
+                        </div>
+                    
+                        <div class="section"><span>3</span>Passwords</div>
+                            <div class="inner-wrap">
+                            <label>Password <input type="password" name="field5" /></label>
+                            <label>Confirm Password <input type="password" name="field6" /></label>
+                        </div>
+                        <div class="button-section">
+                         <input type="submit" name="Sign Up" />
+                         <span class="privacy-policy">
+                         <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+                         </span>
+                        </div>
+                    </form>
+                    
+                    </div>
+            </div>
+          <script type="text/javascript">
+            function val1(){
+            var useremail=document.getElementById('email').value;
+            var userpassword=document.getElementById('password').value;
+      
+            var emailcheck=/^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+            
+            if (emailcheck.test(useremail)){
+              document.getElementById('erroremail').innerHTML = " ";
+            }
+            else{
+              document.getElementById('erroremail').innerHTML = "**Invalid Email id";
+              return false;
+            }
+            
+          }
+        </script>
+        <!-- <script type="text/javascript">
+            document.getElementById('hg').innerHTML = "hufr";
+        </script> -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>

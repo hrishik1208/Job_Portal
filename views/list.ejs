@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+	<!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Admin Dashboard</title>
+   <style type="text/css">
+     body{
+       background-color: 	#F5F5F5;
+     }
+        .modal-header {
+            background:linear-gradient(45deg,#2A88AD, transparent);
+        }
+        input{
+            padding:4px;
+            font-size: larger;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px 3px;
+        }
+        
+  :root {
+  --clr-primary: #2962ff;
+  --clr-primary-hover: #0d47a1;
+  --clr-gray-med: #78909c;
+  --clr-gray-light: #cfd8dc;
+}
+
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-gray-light);
+}
+
+.btn-add {
+  width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  border: none;
+  background-color: #2962ff;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.btn-add:active,
+.btn-add:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+main {
+  margin-top: 1em;
+}
+
+.shadow3{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.shadow2{
+  width: 100%;
+  display: flex;
+  flex-basis: 10%;
+  height: 15em;
+  border: 1px solid black;
+  /* margin: 0 .4em .2em 0; */
+  margin:10px;
+  transition: all 100ms ease-in-out;
+}
+
+   
+
+  /* margin: 0 .4em .2em 0; */
+ 
+
+.div-shadow:nth-child(odd) {
+  box-shadow: 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:nth-child(even) {
+  box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:hover {
+  transform: scale(1.1);
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.patient-data {
+
+    /* display: inline; */
+    
+    box-shadow: 0 0 15px #ccc;
+    border-radius: 5px;
+    width:500px;
+    height:150px;
+    margin:5px;
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+.name{
+  margin:2px auto;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: 50px;
+
+}
+.position{
+  margin:10px;
+  padding :8px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
+}
+.btn{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom:  30px;
+  background: linear-gradient(rgb(138, 144, 226) ,rgb(49, 49, 39));
+}
+
+/* .patient-data:not(:first-child) {
+    margin-top: 1.5rem;
+} */
+.top{
+  margin:0 200px;
+}
+.btn btn-default{
+  margin-right: 100px;
+}
+.hd{
+  text-align: center;
+  margin:10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.btn1{
+  text-align: center;
+  margin: 0 150px;
+  height: 40px;
+  width:120px;
+  border-radius: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  right:80px;
+  top:15px;
+  bottom:  30px;
+  background: linear-gradient(rgb(16, 17, 36) ,rgb(49, 49, 39));
+}
+   </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div style="background-color:blue; color: white;" class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div style="font-size: 20px;padding-left: 40px;" class="collapse navbar-collapse" id="navbarNav">
+                <center>
+                <ul class="navbar-nav" >
+                  <li class="nav-item">
+                    <a style="margin-left: 250px; font-size: 20px;padding-left: 40px;color: white;" class="nav-link active" aria-current="page" href="ABOUTUS">INFO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link active" aria-current="page" href="dashbord">JOBS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="candidatelist">CANDIDATES APPLIED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="#">ALL LISTED COMPANIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a style="font-size: 20px;padding-left: 40px;color: white;" class="nav-link" href="/">LOGOUT</a>
+                  </li>
+                  
+                </ul></center>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <ul style="margin-left: 200px;">
+        <%  var l=[] %>
+        <% companysignupemail.forEach(function (item) { %>
+            <% if(l.includes(item.companyname)!= true){ %>
+
+            
+          <% l.push(item.companyname) %>
+            <li class="patient-data">
+              <div style="background-color:#F5F5F5 ;">
+                <div class='name'><i class="fa fa-empire" aria-hidden="true"></i> <h1> <%= item.companyname %> 
+                 </h1></div>
+            </div>
+                </li>
+            <% } %> 
+        <% }); %>
+    </ul>
+      
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script>
+    document.getElementById("hari").addEventListener("click", function() {
+//   document.getElementById("demo").innerHTML = "Hello World";
+        alert("Submitted");
+    });
+</script>
+</body>
+</html>

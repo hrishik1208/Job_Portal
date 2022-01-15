@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form for companies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 0.5rem;
+            grid-template-areas: 'l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r''l r';
+            grid-template-columns: 1fr 1fr;
+            border: 2px solid black;
+        }
+
+        #lb {
+            grid-area: l;
+            margin: 6px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        #rb {
+            grid-area: r;
+            margin: 6px;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        input[id="ac"] {
+            height: 120px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            border-radius: 4px;
+            background: linear-gradient(to right,#2A88AD 0%, #ffffff 100%);
+        }
+
+        div {
+            margin-top: 25px;
+        }
+
+        #head {
+            text-align: center;
+            justify-content: center;
+        }
+
+        #top {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            /* justify-content: center; */
+        }
+
+        #top>h1 {
+            padding-top: 10px;
+        }
+
+        #head {
+            border: 2px solid black;
+            border-radius: 15px;
+            margin-top: 19px;
+            background: linear-gradient(to right, #2A88AD 0%, #ffffff 100%);
+        }
+
+        #head h3 {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 29px;
+        }
+
+        #i17 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top" style="border: 2px solid black;background: linear-gradient(to right, white 0%, #ffffff 100%);">
+        <img style="margin: 0 auto;" src="images/job-portal.png" alt="logo" height=100px>
+        <!-- <h1 style="font-family: 'Abril Fatface', cursive;">&nbsp;&nbsp;&nbsp;&nbsp;ONLINE JOB BAZAR</h1> -->
+    </div>
+    <!-- <form action="#">
+        <div><label for="nc">Name of Company: &nbsp;&nbsp;&nbsp;</label><input type="text" id="nc"></div>
+        <div><label for="ac">About the Company: </label><input type="text" id="ac" size="20"></div>
+    </form> -->
+    <div id="head">
+        <h1>Company Registration Form</h1>
+    </div>
+    <div class="container">
+        <div class="left" id="lb">
+            <div style="font-size: large;"><label for="i1"><b>Name of the company: &nbsp; &nbsp;</b></label><input type="text" id="i1"></div>
+            
+            <div style="font-size: large;"><label for="i2"><b>About the company:</b></label></div>
+            <div><textarea id="i2" rows="13" cols="55" placeholder=""></textarea></div>
+
+            <div style="font-size: large;"><b>Eligibility Factors for job in the company</b></div>
+            <div><b>Degree :</b></div>
+            <div>
+
+                <input type="checkbox" id="i1" name="n1" value="BTech">
+                <label for="i1">BTech</label>
+                <input type="checkbox" id="i2" name="n2" value="MTech">
+                <label for="i2">MTech</label>
+                <input type="checkbox" id="i3" name="n3" value="Phd">
+                <label for="i3">Phd</label>
+            </div>
+            <div><b>Streams :</b></div>
+            <div><input type="checkbox" id="i4" name="n4" value="Computer Science">
+                <label for="i4">Computer Science</label>
+                <input type="checkbox" id="i5" name="n5" value="Data Science">
+                <label for="i5">Data Science</label><input type="checkbox" id="i6" name="n6"
+                    value="Artificial Intelligence">
+                <label for="i6">Artificial Intelligence</label>
+                <input type="checkbox" id="i7" name="n7" value="Electrical">
+                <label for="i7">Electrical</label><input type="checkbox" id="i8" name="n8" value="Mechanical">
+                <label for="i8">Mechanical</label><input type="checkbox" id="i9" name="n9" value="Civil">
+                <label for="i9">Civil</label><input type="checkbox" id="i10" name="n10" value="Chemical">
+                <label for="i10">Chemical</label><input type="checkbox" id="i11" name="n11"
+                    value="Mathematics and Computation">
+                <label for="i11">Mathematics and Computation</label><input type="checkbox" id="i12" name="n12"
+                    value="Chemistry">
+                <label for="i12">Chemistry</label><input type="checkbox" id="i13" name="n13" value="Physics">
+                <label for="i13">Physics</label>
+            </div>
+        </div>
+        <div class="right" id="rb">
+            <div style="font-size: large;"><b>Number of posts available :</b>
+                <input type="number" placeholder="Number of posts available">
+            </div>
+            <div style="font-size: large;"><b>Accepting applications till : </b><input type="date"></div>
+            <div style="font-size: large;"><label for="i14"><b>Mean-salary being offered :</b> </label>
+
+                <select name="cars" id="i14">
+                    <option value="range1">Under 5 lpa</option>
+                    <option value="range2">5 lpa - 10 lpa</option>
+                    <option value="range3">10 lpa - 15 lpa</option>
+                    <option value="range4">15 lpa - 20 lpa</option>
+                    <option value="range5">20 lpa - 25 lpa</option>
+                    <option value="range6">25 lpa - 30 lpa</option>
+                    <option value="range7">Above 30 lpa</option>
+                </select>
+            </div>
+            <div style="font-size: large;"><b>Contact </b> </div><div><label for="i15"><b>Email : </b></label><input type="email" id="i15"></div>
+                <div><label for="i16"><b>Telephone : </b></label><input type="text" id="i16"></div>
+            
+        </div>
+        <div id="i17"><button type="submit"
+                style="font-family: 'Cairo', sans-serif; border-width: 4px;"><b>Submit</b></button></div>
+
+    </div>
+</body>
+
+</html>

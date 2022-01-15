@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  :root {
+  --clr-primary: #2962ff;
+  --clr-primary-hover: #0d47a1;
+  --clr-gray-med: #78909c;
+  --clr-gray-light: #cfd8dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--clr-gray-light);
+}
+
+.btn-add {
+  width: 6em;
+  height: 2em;
+  font-size: 1.5em;
+  border: none;
+  background-color: #2962ff;
+  color: white;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 0.2em;
+  outline: none;
+  transition: all 100ms ease-in;
+}
+
+.btn-add:active,
+.btn-add:hover {
+  background-color: var(--clr-primary-hover);
+}
+
+main {
+  margin-top: 1em;
+}
+
+#div-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 2em 0em;
+}
+
+.div-shadow {
+  width: 20em;
+  height: 15em;
+  /* margin: 0 .4em .2em 0; */
+  margin:10px;
+  transition: all 100ms ease-in-out;
+}
+
+.div-shadow:nth-child(odd) {
+  box-shadow: 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:nth-child(even) {
+  box-shadow: inset 0px 0px 10px var(--clr-gray-med);
+}
+
+.div-shadow:hover {
+  transform: scale(1.1);
+}
+
+</style>
+<body>
+  <header>
+    <h1>Make Divs with JS </h1>
+    <button class="btn-add">Add New</button>
+  </header>
+  <main>
+    <h2>New Containers</h2>
+    <div id="div-container"></div>
+  </main>
+  <section>
+    <h2>Footer</h2>
+  </section>
+  <script>
+    const BtnAdd = document.querySelector(".btn-add");
+const DivContainer = document.getElementById("div-container");
+
+BtnAdd.addEventListener("click", AddNew);
+
+function AddNew() {
+  const newDiv = document.createElement("div");
+  console.log("add");
+  newDiv.classList.add("div-shadow");
+  DivContainer.appendChild(newDiv);
+}
+
+  </script>
+</body>
+</html>
