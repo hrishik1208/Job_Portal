@@ -1,0 +1,29 @@
+docker ps -a
+docker images 
+docker run ubuntu
+docker run (ID) (insted of UBUNTU same thing)
+docker exec -it 
+docker start -a
+docker run -it d13csygyu /bin/bash
+docker ps
+docker stop ID
+docker image rm UBUNTU
+
+# 
+ch2 and ch6. ch6 will be more weighted. No desciprtive questions only analytical math based questions.  Classtest 1 ER model. Class test 2 chapter 7 ch8. tierce 2-> indexing hashing transactipons or concurrency model.
+Exercise of korth / sudarshan
+#
+docker run nginx
+docker ps
+port() will show in localhost it is running.
+dcoker run -d --name webs nginx
+docker logs ID
+docker pull nginx:1.20
+docker imagesdocker run -d --name older nginx:1.20
+docker ps
+docker stop ID
+docker stop latest
+docker ps-a
+docker rm webs
+docker run -d --name latest -p 8080:80 nginx:latest
+docker logs
